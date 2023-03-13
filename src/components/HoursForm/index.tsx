@@ -17,6 +17,7 @@ function HoursForm({names, fn, response}:{names:string[], fn:Function, response:
     }
   return (
     <div className='flex flex-col items-center text-center text-lg font-medium space-y-3 m-4'>
+        <h2>Add hours to them</h2>
         <form onSubmit={handleSubmit(totalHours)} className='flex flex-col space-y-3'>
             {names.map((name:String, index:number) => {
                 return(

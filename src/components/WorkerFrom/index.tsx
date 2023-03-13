@@ -9,7 +9,7 @@ function WorkerForm({fn}:{fn:Function}) {
   const  { register, handleSubmit } = useForm<Input>();
 
   const names:SubmitHandler<Input> = (data) => {
-    const inputNames = data.names.split(' ');
+    const inputNames = data.names.trim().split(' ');
     console.log(inputNames)
     fn(inputNames)
   }
